@@ -1,0 +1,65 @@
+<center>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Lead Management</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<h1>Lead Management</h1>
+
+<h3>Add Lead</h3>
+
+<input type="text" id="leadName" placeholder="Lead Name"><br><br>
+
+<input type="email" id="leadEmail" placeholder="Lead Email"><br><br>
+
+<input type="text" id="leadPhone" placeholder="Phone"><br><br>
+
+<input type="text" id="leadStatus" placeholder="Status"><br><br>
+
+<button onclick="saveLead()">Save Lead</button>
+
+<hr>
+
+<h2>Lead List</h2>
+
+<button onclick="loadLeads()">Refresh Leads</button>
+
+<table border="1" align="center">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="leadTable">
+
+</tbody>
+
+</table>
+
+<script src="js/lead.js"></script>
+
+</body>
+
+</html>
+</center>

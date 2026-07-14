@@ -1,0 +1,63 @@
+<center>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Customer Management</h1>
+
+<h3>Add Customer</h3>
+
+<input type="text" id="firstName" placeholder="First Name"><br><br>
+
+<input type="text" id="lastName" placeholder="Last Name"><br><br>
+
+<input type="email" id="email" placeholder="Email"><br><br>
+
+<input type="text" id="phoneNumber" placeholder="Phone Number"><br><br>
+
+<input type="date" id="dateOfBirth"><br><br>
+
+<input type="text" id="accountStatus" placeholder="Status"><br><br>
+
+<button onclick="saveCustomer()">Save Customer</button>
+<div style="height:90px;"></div>
+
+<hr>
+<h2>Customer List</h2>
+
+<button onclick="loadCustomers()">Refresh Customers</button>
+<div style="height:20px;"></div>
+
+<table border="1" align="center" cellpadding="10">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>DOB</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="customerTable">
+
+</tbody>
+
+</table>
+
+<script src="js/customer.js"></script>
+
+</body>
+</html>
+</center>

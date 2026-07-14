@@ -1,0 +1,59 @@
+<center>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Policy Management</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Policy Management</h1>
+
+<h3>Add Policy</h3>
+
+<input type="text" id="policyName" placeholder="Policy Name"><br><br>
+
+<input type="text" id="policyType" placeholder="Policy Type"><br><br>
+
+<input type="number" id="premiumAmount" placeholder="Premium Amount"><br><br>
+
+<input type="text" id="coverageAmount" placeholder="Coverage Amount"><br><br>
+
+<button onclick="savePolicy()">Save Policy</button>
+
+<hr>
+
+<h2>Policy List</h2>
+
+<button onclick="loadPolicies()">Refresh Policies</button>
+
+<table border="1" align="center">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Type</th>
+<th>Premium</th>
+<th>Coverage</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="policyTable">
+
+</tbody>
+
+</table>
+
+<script src="js/policy.js"></script>
+
+</body>
+</html>
+</center>
